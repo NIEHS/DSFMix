@@ -1,11 +1,12 @@
 # DSFMix
 
-RUNNING DSFMix in R
-1)Open R
-2)Install old version spade (spade_1.0.0.tar) included in the folder
-###COMMENT on installing spade (spade_1.0.0.tar)##
-#installing spade algorithm (spade_1.0.0.tar) might produce C++ clang related errors. I recommend open terminal and run the following before installation:
-#cat <<- EOF > ~/.R/Makevars
+Instructions for RUNNING DSFMix in R
+
+1)Open R\
+2)Install old version spade (spade_1.0.0.tar) included in the folder\
+###COMMENT on installing spade (spade_1.0.0.tar)##\
+#installing spade algorithm (spade_1.0.0.tar) might produce C++ clang related errors. I recommend open terminal and run the following before installation:\
+#cat <<- EOF > ~/.R/Makevars\
 #C=/usr/bin/clang
 #CXX=/usr/bin/clang++
 #EOF

@@ -12,10 +12,11 @@ Instructions for RUNNING DSFMix in R
 #EOF\
 #R CMD INSTALL spade_1.0.0.tar
 
-2)Install all other dsfmix dependent R libraries highlighted in the file "feature dsfmix prerequisite.R"
-2)Rbind dat1_hormonedata.rdata and dat2_hormonedata.rdata into one data object dat1.rdata i.e. in R run dat1=rbind(dat1,dat2)
+3)Install all other dsfmix dependent R libraries highlighted in the file "feature dsfmix prerequisite.R"
 
-3)For each dsfmix application create an input folder with the following input data:\
+4)Rbind dat1_hormonedata.rdata and dat2_hormonedata.rdata into one data object dat1.rdata i.e. in R run dat1=rbind(dat1,dat2)
+
+4)For each dsfmix application create an input folder with the following input data:\
 a)save(dat1,file="dat1.rdata") # dat1.rdata is scRNA-seq normalized data matrix (dat1_****.rdata) with rows genes and columns cells\
 b)seuratclust # vector of cluster labels associated with each cell (seuratclust_****.rdata)\
 c)timeclust # vector of time point labels associated with each cell (timeclust_****.rdata)\
@@ -24,17 +25,17 @@ e)feature dsfmix running code.R\
 f)feature dsfmix spadefunctions.R\
 g)fcstospadedatamatrix.fcs
 
-4)Set the input folder as working directory to run dsfmix
+5)Set the input folder as working directory to run dsfmix
 
-5)In line 16 of the file "feature dsfmix running code.R" set file name for spade input FCS data as spadefilename="dsfmix***.fcs" E.g. for hormonedata set spadefilename="dsfmixhormone.fcs"
+6)In line 16 of the file "feature dsfmix running code.R" set file name for spade input FCS data as spadefilename="dsfmix***.fcs" E.g. for hormonedata set spadefilename="dsfmixhormone.fcs"
 
-6)In line 428 of the file "feature dsfmix running code.R" set number of spade initial clusters to k=300 for spermdata, k=200 for ipscdata and emtdata and k=100 for hormonedata. Also due to small sample size for dsfmix analysis on hormonedata set the parameter do_real_filtering = FALSE in the dsfmixdriverc function.
+7)In line 428 of the file "feature dsfmix running code.R" set number of spade initial clusters to k=300 for spermdata, k=200 for ipscdata and emtdata and k=100 for hormonedata. Also due to small sample size for dsfmix analysis on hormonedata set the parameter do_real_filtering = FALSE in the dsfmixdriverc function.
 
-7)In R run dsfmix:\
+8)In R run dsfmix:\
    source("feature dsfmix running code.R")
    
-8)After a couple of minutes to hours depending on the size of data, in the input folder you can view several output figures and r objects corresponding to several output data associated with different stages in  dsfmix algorithm.
+9)After a couple of minutes to hours depending on the size of data, in the input folder you can view several output figures and r objects corresponding to several output data associated with different stages in  dsfmix algorithm.
 
-9)Within the input folder there is an output folder named "output", which contains a) the dsfmix input data stored as FCS file and other spade related files\
+10)Within the input folder there is an output folder named "output", which contains a) the dsfmix input data stored as FCS file and other spade related files\
     b) the results of  spade found within the output folder called "orig_spade" called "pdf" showing the profile of each gene on a spade tree\
     c) the results of dsfmix forest found within the orig_spade folder called "spadeforest" showing the profile of each gene on a dynamic spanning forest.

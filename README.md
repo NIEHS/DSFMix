@@ -13,9 +13,10 @@ Instructions for RUNNING DSFMix in R
 #R CMD INSTALL spade_1.0.0.tar
 
 2)Install all other dsfmix dependent R libraries highlighted in the file "feature dsfmix prerequisite.R"
+2)Rbind dat1_hormonedata.rdata and dat2_hormonedata.rdata into one data object dat1.rdata i.e. in R run dat1=rbind(dat1,dat2)
 
 3)For each dsfmix application create an input folder with the following input data:\
-a)dat1.rdata #scRNA-seq normalized data matrix (dat1_****.rdata) with rows genes and columns cells\
+a)save(dat1,file="dat1.rdata") # dat1.rdata is scRNA-seq normalized data matrix (dat1_****.rdata) with rows genes and columns cells\
 b)seuratclust # vector of cluster labels associated with each cell (seuratclust_****.rdata)\
 c)timeclust # vector of time point labels associated with each cell (timeclust_****.rdata)\
 d)feature dsfmix prerequisite.R\

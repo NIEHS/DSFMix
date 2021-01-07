@@ -14,7 +14,7 @@ Instructions for RUNNING DSFMix in R
 
 3)Install all other dsfmix dependent R libraries highlighted in the file "feature dsfmix prerequisite.R"
 
-4)Rbind dat1_hormonedata.rdata and dat2_hormonedata.rdata into one data object dat1.rdata i.e. in R run dat1=rbind(dat1,dat2)
+4)Rbind dat1_hormonedata.rdata and dat2_hormonedata.rdata into one R data object i.e. in R run dat1=rbind(dat1,dat2)
 
 5)For each dsfmix application create an input folder with the following input data:\
 a)save(dat1,file="dat1.rdata") # dat1.rdata is scRNA-seq normalized data matrix (dat1_****.rdata) with rows genes and columns cells\

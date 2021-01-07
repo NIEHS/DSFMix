@@ -11,7 +11,6 @@ RUNNING DSFMix in R
 #EOF
 #R CMD INSTALL spade_1.0.0.tar
 2)Install all other dsfmix dependent R libraries highlighted in the file "feature dsfmix prerequisite.R"
-
 3)For each dsfmix application create an input folder with the following input data:
 a)dat1.rdata #scRNA-seq normalized data matrix (dat1_****.rdata) with rows genes and columns cells
 b)seuratclust # vector of cluster labels associated with each cell (seuratclust_****.rdata)

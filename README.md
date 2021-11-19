@@ -3,7 +3,7 @@ title: "DSFMix: Dynamic Spanning Forest Mixtures"
 author: "Benedict Anchang, Raúl Méndez Giráldez"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
-  bookdown::html_document2:
+  html_document2
     fig_caption: yes
     theme: flatly
     toc: yes

@@ -151,7 +151,7 @@ The latter should produce about 206 Mb of data (dpending on drive/OS):
 206M    
 ```
 
-# A quick look to the output by DSFMix
+# A quick look at the output by DSFMix
 
 Within **output folder**, **orig_spade/spadeforest** subfolder, there is
 the plot of the Dynamic Spade Forest (DSF), colored by the medians of

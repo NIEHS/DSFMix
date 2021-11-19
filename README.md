@@ -158,8 +158,11 @@ the plot of the Dynamic Spade Forest (DSF), colored by the medians of
 the collected times within each node, file
 **downsampled.silclustered.fcs.anno.Rsave.medianstimeclust.pdf**.
 
-![](./hormone_DSF.medianstimeclust.png) And also, in the same folder the
-same DSF but now colored by the medians of the Seurat clusters.
+![](./hormone_DSF.medianstimeclust.png)
+
+And also, in the same folder the
+same DSF but now colored by the medians of the Seurat clusters, 
+file **downsampled.silclustered.fcs.anno.Rsave.mediansseuratclust.pdf**.
 
 ![](./hormone_DSF.mediansseuratclust.png)
 

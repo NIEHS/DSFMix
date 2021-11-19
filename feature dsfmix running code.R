@@ -15,6 +15,7 @@ get_os <- function(){
 }
 
 n_cores <- 1
+os = get_os()
 if(os!="windows"){
   # try to determine the number of processors and get 1 -less
   if(!require(doParallel)){

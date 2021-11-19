@@ -37,7 +37,12 @@ source("feature dsfmix prerequisite.R")
 ###spermdata
 priorg=NULL
 spadefilename="dsfmixhormone.fcs"
+
+# merge the two matrices
 load("dat1_hormonedata.rdata")
+load("dat2_hormonedata.rdata")
+
+dat1 <- rbind(dat1,dat2)
 load("timeclust_hormonedata.rdata")
 load("seuratclust_hormonedata.rdata")
 timeclust=as.numeric(as.factor(timeclust))

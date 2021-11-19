@@ -38,7 +38,7 @@
 
 ###### INTEGRATED SPADE.DRIVER FUNCTIONS ##############
 
-dsfmixmain <-
+dsfmixdriverc <-
 function (files, file_pattern = "*.fcs", out_dir = ".", cluster_cols,
 panels = NULL, comp = FALSE, arcsinh_cofactor = NULL, transforms = flowCore::arcsinhTransform(a = 0, b = 0.2), downsampling_target_number = NULL, downsampling_target_pctile = 1, downsampling_target_percent = 1, downsampling_exclude_pctile = 0, k = 200, clustering_samples = NULL, layout = igraph:::layout.kamada.kawai, pctile_color = c(0, 1), fcs_channel_mappings_json = NULL, graph_cols = NULL, run_spade=TRUE, do_real_filtering = FALSE, run_spade_only=FALSE, gated=FALSE,forestcluster=NULL, dcut = 3, leafsort=TRUE,minsize=20, remove_single_cell_clusters=FALSE, perplexity = NULL, costtol=7, cofactor=5, downsample=FALSE,reg=NULL,forestlayout=igraph:::layout_in_circle)
 

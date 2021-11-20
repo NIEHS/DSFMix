@@ -80,7 +80,7 @@ then this will make **plot3D** not to load.
 
 Within a R console, assuming we have set our working directory in the
 same folder this repository has been cloned (in the example, it would be
-within the Documents folder, DSFMix subfolder), run
+within the home folder, DSFMix subfolder), run
 **install_DSFMix_dependencies.R** script.
 
 ``` r

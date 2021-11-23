@@ -173,7 +173,7 @@ if(length(new.packages)){
       }
       # install spade from source file in gitfront
       #install.packages("https://gitfront.io/r/anchangslab/431118cea12808ca2a76813342377dc01eb26ebe/DSFMix/blob/spade_1.0.0.tar", repos = NULL, type = "source")
-      install.packages("spade_1.0.0.tar", repos = NULL, type = "source")
+      install.packages("spade_1.0.0.tar.gz", repos = NULL, type = "source")
       
     }else if(pck=="xgboost"){
       cat("\nCXX14FLAGS=-fPIC",

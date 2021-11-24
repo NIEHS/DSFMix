@@ -1,5 +1,3 @@
-[README.md](https://github.com/NIEHS/DSFMix/files/7591652/README.md)
-[README.md](https://github.com/NIEHS/DSFMix/files/7591639/README.md)
 # Introduction
 
 This page contains instructions about how to install, and run the R
@@ -82,7 +80,7 @@ then this will make **plot3D** not to load.
 
 Within a R console, assuming we have set our working directory in the
 same folder this repository has been cloned (in the example, it would be
-within the home folder, DSFMix subfolder), run
+within the Documents folder, DSFMix subfolder), run
 **install_DSFMix_dependencies.R** script.
 
 ``` r
@@ -160,10 +158,9 @@ the plot of the Dynamic Spade Forest (DSF), colored by the medians of
 the collected times within each node, file
 **downsampled.silclustered.fcs.anno.Rsave.medianstimeclust.pdf**.
 
-![](./hormone_DSF.medianstimeclust.png)
-
-And also, in the same folder the same DSF but now colored by the medians of the Seurat clusters, 
-file **downsampled.silclustered.fcs.anno.Rsave.mediansseuratclust.pdf**.
+![](./hormone_DSF.medianstimeclust.png) And also, in the same folder the
+same DSF but now colored by the medians of the Seurat clusters, file
+**downsampled.silclustered.fcs.anno.Rsave.mediansseuratclust.pdf**.
 
 ![](./hormone_DSF.mediansseuratclust.png)
 
@@ -175,7 +172,7 @@ Anchang, A., R. Mendez-Giraldez, X. Xu, T. K. Archer, Q. Chen, S. K.
 Plevritis, A. A. Motsinger-Reif, and Li Jian-Liang. 2022.
 “Visualization, Benchmarking and Characterization of Nested Single-Cell
 Heterogeneity as Dynamic Forest Mixtures.” *Briefings in
-Bioinformatics*, in press. <https://github.com/NIEHS/DSFMix/>.
+Bioinformatics*, under review. <https://github.com/NIEHS/DSFMix/>.
 
 </div>
 

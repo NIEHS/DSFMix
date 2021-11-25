@@ -36,7 +36,7 @@ corresponding versions of Rtools
 Once Rtools is installed, you need to add the location of Rtools
 utilities in the definition of your PATH, so that R can have access to
 them. This is done by re-defining your PATH in the **.Renviron** file
-that should be placed in your **Documents** folder. You can do this by
+that should be placed in your **home** folder. You can do this by
 either creating a text file with the new path or else, from the R
 console executing the following command (assuming Rtools4 is installed):
 

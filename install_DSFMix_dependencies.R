@@ -49,7 +49,7 @@ if(!require(remotes)){
 # We do not include plot3D because it does not load, and halts the entire session
 needed_packages <- c("spade","Seurat", "xgboost", "car", "scales", "flowCore", "RColorBrewer", 
                      "cluster", "fastcluster", "sp", "igraph", "dendextend", "ggplot2", "plot3D",
-                     "diptest", "mutoss", "lawstat","robustbase", "uwot", 
+                     "diptest", "multtest", "mutoss", "lawstat","robustbase", "uwot", 
                      "Rtsne", "phateR", "party", "genie", "dendsort", "networkD3", 
                      "magrittr", "htmlwidgets", "plyr", "tidyr", "dynamicTreeCut", 
                      "gTests", "parallel","modeltools", "sandwich", "strucchange", "genieclust","Matrix")

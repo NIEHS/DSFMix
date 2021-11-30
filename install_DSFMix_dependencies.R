@@ -63,7 +63,7 @@ if(os=="osx"){
       remove.packages("misc3d")
   
   # install old version of misc3d provided in the repository
-  install.packages("misc3d_0.8-4.tar.gz",repos = NULL, type = "source")
+  install.packages("misc3d_0.8-4.tar.gz",repos = NULL, type = "source", force = TRUE)
 }
 
 # List of Bioconductor packages, including the installed ones
@@ -116,7 +116,7 @@ if(length(new.packages)){
       remotes::install_github("RGLab/cytolib", upgrade="never", dependencies=FALSE, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
       
       # 3. Install flowCore package itself:
-      BiocManager::install(pck, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
+      BiocManager::install(pck, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'", ask = FALSE)
       
     }else if(pck=="party"){
       # party is from CRAN, and for some reason the dependencies cannot be handled by install.packages
@@ -129,11 +129,11 @@ if(length(new.packages)){
       install.packages(dependencies,repos="https://cran.rstudio.com/", dependencies = TRUE,force = TRUE, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
       
       # And then we install the party package itself
-      BiocManager::install(pck, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
+      BiocManager::install(pck, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'", ask = FALSE)
     }else{
       
       if(isBiocManager){
-        BiocManager::install(pck, dependencies=TRUE, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
+        BiocManager::install(pck, dependencies=TRUE, args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'", ask = FALSE)
       }else{
         biocLite(pck, dependencies = TRUE,args="--configure.vars='INCLUDE_DIR=$(CPATH) LIB_DIR=$(LD_LIBRARY_PATH)'")
       }

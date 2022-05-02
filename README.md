@@ -13,7 +13,7 @@ scRNA-seq or antigenic proteins in the case of CyTOF) that account for
 variation in multimodality, skewness and time. These markers are
 subsequently used to build the forest (i.e. mixtures of trees), using
 tree agglomerative hierarchical clustering (THAC) and dynamic branch
-cutting. For further detail, please refer to our recent publication
+cutting. For further detail, please refer to our forthcoming publication
 [Anchang et al.](#ref-anchang2022) ([2022](#ref-anchang2022)) .
 
 # Installation
@@ -36,7 +36,7 @@ corresponding versions of Rtools
 Once Rtools is installed, you need to add the location of Rtools
 utilities in the definition of your PATH, so that R can have access to
 them. This is done by re-defining your PATH in the **.Renviron** file
-that should be placed in your **home** folder. You can do this by
+that should be placed in your **Documents** folder. You can do this by
 either creating a text file with the new path or else, from the R
 console executing the following command (assuming Rtools4 is installed):
 
@@ -44,7 +44,7 @@ console executing the following command (assuming Rtools4 is installed):
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
 ```
 
-The best way to test whether Rtools path has been added properly to you
+The best way to test whether Rtools path has been added properly you
 your PATH, is to quit the current R session and upon restart, type:
 
 ``` r
@@ -80,7 +80,7 @@ then this will make **plot3D** not to load.
 
 Within a R console, assuming we have set our working directory in the
 same folder this repository has been cloned (in the example, it would be
-within the home folder, DSFMix subfolder), run
+within the Documents folder, DSFMix subfolder), run
 **install_DSFMix_dependencies.R** script.
 
 ``` r
@@ -151,7 +151,7 @@ The latter should produce about 206 Mb of data (dpending on drive/OS):
 206M    
 ```
 
-# A quick look at the output by DSFMix
+# A quick look to the output by DSFMix
 
 Within **output folder**, **orig_spade/spadeforest** subfolder, there is
 the plot of the Dynamic Spade Forest (DSF), colored by the medians of
@@ -159,8 +159,7 @@ the collected times within each node, file
 **downsampled.silclustered.fcs.anno.Rsave.medianstimeclust.pdf**.
 
 ![](./hormone_DSF.medianstimeclust.png) And also, in the same folder the
-same DSF but now colored by the medians of the Seurat clusters, file
-**downsampled.silclustered.fcs.anno.Rsave.mediansseuratclust.pdf**.
+same DSF but now colored by the medians of the Seurat clusters.
 
 ![](./hormone_DSF.mediansseuratclust.png)
 
@@ -168,11 +167,12 @@ same DSF but now colored by the medians of the Seurat clusters, file
 
 <div id="ref-anchang2022" class="csl-entry">
 
-Anchang, A., R. Mendez-Giraldez, X. Xu, T. K. Archer, Q. Chen, S. K.
-Plevritis, A. A. Motsinger-Reif, and Li Jian-Liang. 2022.
-“Visualization, Benchmarking and Characterization of Nested Single-Cell
-Heterogeneity as Dynamic Forest Mixtures.” *Briefings in
-Bioinformatics*, under review. <https://github.com/NIEHS/DSFMix/>.
+Anchang, Benedict, Raul Mendez-Giraldez, Xiaojiang Xu, Trevor K Archer,
+Qing Chen, Guang Hu, Sylvia K Plevritis, Alison Anne Motsinger-Reif, and
+Jian-Liang Li. 2022. “<span class="nocase">Visualization, benchmarking
+and characterization of nested single-cell heterogeneity as dynamic
+forest mixtures</span>.” *Briefings in Bioinformatics* 23 (2).
+<https://doi.org/10.1093/bib/bbac017>.
 
 </div>
 

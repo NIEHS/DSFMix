@@ -98,7 +98,7 @@ run **DSFMix**.
 
 ## Input Data
 
-As AN example, we will run DSFMix using the scRNAs-seq data by Hoffman
+As an example, we will run DSFMix using the scRNAs-seq data by Hoffman
 *et al.* [Hoffman et al.](#ref-hoffman_single-cell_2020)
 ([2020](#ref-hoffman_single-cell_2020)) as input. The data represents
 the early transcriptional of response of A1-2 breast cancer cell lines

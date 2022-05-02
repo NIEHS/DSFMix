@@ -44,7 +44,7 @@ console executing the following command (assuming Rtools4 is installed):
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
 ```
 
-The best way to test whether Rtools path has been added properly you
+The best way to test whether Rtools path has been added properly to you
 your PATH, is to quit the current R session and upon restart, type:
 
 ``` r

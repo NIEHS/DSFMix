@@ -13,7 +13,7 @@ scRNA-seq or antigenic proteins in the case of CyTOF) that account for
 variation in multimodality, skewness and time. These markers are
 subsequently used to build the forest (i.e. mixtures of trees), using
 tree agglomerative hierarchical clustering (THAC) and dynamic branch
-cutting. For further detail, please refer to our forthcoming publication
+cutting. For further detail, please refer to our recent publication
 [Anchang et al.](#ref-anchang2022) ([2022](#ref-anchang2022)) .
 
 # Installation
